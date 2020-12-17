@@ -48,6 +48,8 @@ spec:
           - name: trivy-cache
             mountPath: /root/.cache
           securityContext:
+            runAsUser: 0
+            fsGroup: 0
             privileged: true
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
