@@ -27,7 +27,6 @@ spec:
         - name: docker-socket-volume
           hostPath:
             path: /var/run/docker.sock
-            type: File
         - name: trivy-cache
           hostPath:
             path: /var/trivy/Library/Caches
